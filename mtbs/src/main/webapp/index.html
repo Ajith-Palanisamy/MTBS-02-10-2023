@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>MTBS</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./js/index.js"></script>
+</head>
+<body id="body-content">
+    <h1>Movie Ticket Booking Application</h1>
+    <div id="loginDiv">
+    <h2>Login</h2>
+    <form id="loginForm" method="POST">
+    <table>
+    <tr><td>
+    <label for="loginEmail">Email</label>
+    </td><td>
+    <input type="email" name="loginEmail" id="loginEmail"  autocomplete="off" required><br>
+    </td></tr>
+    <tr><td>
+    <label for="loginPassword">Password</label>
+    </td><td>
+    <input type="password" name="loginPassword" id="loginPassword"  autocomplete="off" required><br>
+    </td></tr>
+    <tr><td></td><td>
+    <input type="submit" value="Login"><br>
+    </td></tr>
+    <tr><td colspan="2">
+    <p>New User - <a id="registerLink" href="">Register</a></p>
+    </td></tr>
+    </table>
+    </form>
+    </div>
+    
+    <div id="registerDiv" style="display:none;">
+    <h2>Register</h2>
+    <form id="registerForm" method="POST">
+    <table>
+    <tr><td>
+    <label for="name">Name</label>
+    </td><td>
+    <input type="text" name="name" id="name" autocomplete="off" required><br>
+    </td></tr>
+    <tr><td>
+    <label for="registerEmail">Email</label>
+    </td><td>
+    <input type="text" name="registerEmail" id="registerEmail" autocomplete="off" required><br>
+    </td></tr>
+    <tr><td>
+    <label for="registerMobileNumber">Mobile Number</label>
+    </td><td>
+    <input type="text" name="registerMobileNumber" id="registerMobileNumber" autocomplete="off" required><br>
+    </td></tr>
+    <tr><td>
+    <label for="registerPassword">Password</label>
+    </td><td>
+    <input type="password" name="registerPassword" id="registerPassword" autocomplete="off" required><br>
+    </td></tr>
+    <tr><td>
+    <label for="confirmPassword">Confirm Password</label>
+    </td><td>
+    <input type="password" name="confirmPassword" id="confirmPassword" autocomplete="off" required><br>
+    </td></tr>
+    <tr><td></td><td>
+    <input type="submit" value="Register"><br>
+    </td></tr>
+    <tr><td colspan="2">
+    <p>Already registered - <a id="loginLink" href="">Login</a></p>
+    </td></tr>
+    </table>
+    </form>
+    </div>
+</body>
+</html>
